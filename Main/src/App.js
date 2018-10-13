@@ -41,7 +41,6 @@ class App extends Component {
 
   render() {
     return (
-
       <div className="App" style={{backgroundColor: this.state.current_theme.color}}>
           <Button onClick={this.switchTheme} bsStyle="primary" className="ThemeButton">Themes</Button>
           <ImportFile />
