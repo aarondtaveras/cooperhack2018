@@ -10,7 +10,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="FooterText">
-        <p>Created by: {this.state.firstName}, {this.state.secondName}, {this.state.thirdName}, {this.state.fourthName}</p>
+        Created by: {this.state.firstName}, {this.state.secondName}, {this.state.thirdName}, {this.state.fourthName}
       </div>
     );
   }
