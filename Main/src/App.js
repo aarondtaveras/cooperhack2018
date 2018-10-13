@@ -7,20 +7,12 @@ import Footer from './components/Footer';
 import { Button } from 'react-bootstrap';
 
 class App extends Component {
-
+  
   constructor(){
     super();
     // Creating our state object - decide what data this component needs to store/manipulate
     this.state = {
-      current_theme : {
-        name: "default",
-        color: "rgb(66, 134, 244)"
-      }
-      // themes: [
-      //     {name: "default",primary:"rgb(66, 134, 244)"},
-      //     {name: "dark",primary:"rgb(20, 41, 76)"}
-      //     // secondary:""}
-      //   ]
+      current_theme : {name: "default",color: "rgb(66, 134, 244)"}
     };
     this.switchTheme = this.switchTheme.bind(this);
   };
@@ -42,7 +34,8 @@ class App extends Component {
   render() {
     return (
       <div className="App" style={{backgroundColor: this.state.current_theme.color}}>
-          <Button onClick={this.switchTheme} bsStyle="primary" className="ThemeButton">Themes</Button>
+          <h1 className="BrandName">WeRead</h1>
+          <Button onClick={this.switchTheme} bsStyle="large" className="ThemeButton">Themes</Button>
           <ImportFile />
           <Input />
           <Main />

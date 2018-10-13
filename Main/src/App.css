@@ -2,33 +2,58 @@
   height: 100%;
 }
 
+.BrandName{
+  position: absolute;
+  color: white;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
 .InputBox{
   width:500px;
   margin: 50px auto 40px auto;
 }
 
-.ImportButton{
-  margin-left: 40%;
-  margin-top: 20px;
+.ImportContainer{
+  display: block;
+  width: 34%;
+  margin: 80px auto 80px auto;
 }
 
 .ThemeButton{
-  margin-left: 90%;
+  margin-left: 85%;
+  margin-right: 100px;
   margin-top: 30px;
+  border-radius: 20px;
+}
+
+.ThemeButton:hover{
+  background-color: gray;
 }
 
 .MainBox{
-  width: 600px;
-  height: 600px;
-  background-color: black;
-  margin: 30px auto 30px auto;
-  color: white;
+  width: 1200px;
+  height: 700px;
+  background-color: #376A9D;
+  margin: 100px auto 100px auto;
+  color: black;
+  text-align: center;
+  box-shadow: 0 15px 8px 0 rgba(0,0,0,.8);
+  border-radius: 20px;
 }
 
 .FooterText{
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.Theme1{
+  color: blue;
+}
+
+.Theme2{
+  color: red;
 }

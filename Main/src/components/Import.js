@@ -4,7 +4,7 @@ import { FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap'
 class ImportFile extends Component {
   render() {
     return (
-      <div className="ImportButton">
+      <div className="ImportContainer">
         {formInstance}
       </div>
     );
