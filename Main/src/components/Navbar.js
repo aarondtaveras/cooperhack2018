@@ -7,19 +7,13 @@ class MainNav extends Component {
       <div className="NavClass">
       <Navbar collapseOnSelect>
         <Navbar.Header>
-          <h1>We-Read</h1>
+          <h1>WeRead</h1>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
-              <Button bsStyle="primary">Autism</Button>
-            </NavItem>
-            <NavItem eventKey={2} href="#">
-              <Button bsStyle="primary">ADHD</Button>
-            </NavItem>
-            <NavItem eventKey={3} href="#">
-              <Button bsStyle="primary">Hearing</Button>
+              <Button bsStyle="primary">Themes!</Button>
             </NavItem>
           </Nav>
         </Navbar.Collapse>

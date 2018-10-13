@@ -1,13 +1,32 @@
 import React, { Component } from 'react';
+import { FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
 
-class Import extends Component {
+class ImportFile extends Component {
   render() {
     return (
-      <div className="ImportFile">
-
+      <div className="ImportButton">
+      {formInstance}
       </div>
     );
   }
 }
 
-export default Import;
+function FieldGroup({ id, label, help, ...props }) {
+  return (
+    <FormGroup controlId={id}>
+      <ControlLabel>{label}</ControlLabel>
+      <FormControl {...props} />
+      {help && <HelpBlock>{help}</HelpBlock>}
+    </FormGroup>
+  );
+}
+
+const formInstance = (
+  <FieldGroup
+      id="formControlsFile"
+      type="file"
+      label="File"
+    />
+);
+
+export default ImportFile;
