@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+    
+
 class App extends Component {
   constructor(){
     super();
@@ -21,12 +23,11 @@ class App extends Component {
 
   componentDidMount(){
     this.sliceText();
+
   }
 
   generateFont(){
     let index = Math.floor(Math.random()*this.state.fonts.length);
-    // Math.floor(Math.random()*upper_bound);
-    console.log(this.state.fonts[index]);
     return this.state.fonts[index];
   }
 
@@ -115,3 +116,5 @@ class App extends Component {
 }
 
 export default App;
+
+// export GOOGLE_APPLICATION_CREDENTIALS="./credentials.json";
