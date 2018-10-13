@@ -5,16 +5,16 @@ class ImportFile extends Component {
   render() {
     return (
       <div className="ImportButton">
-      {formInstance}
+        {formInstance}
       </div>
     );
   }
 }
 
-function FieldGroup({ id, label, help, ...props }) {
+function FieldGroup({ id, help, ...props }) {
   return (
     <FormGroup controlId={id}>
-      <ControlLabel>{label}</ControlLabel>
+      <ControlLabel>{"Upload a file"}</ControlLabel>
       <FormControl {...props} />
       {help && <HelpBlock>{help}</HelpBlock>}
     </FormGroup>
