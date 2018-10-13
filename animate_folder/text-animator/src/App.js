@@ -10,10 +10,10 @@ class App extends Component {
       text: "It was the hunter's first time outside Montana. He woke, stricken still with the hours-old vision of ascending through rose-lit cumulus, of houses and barns like specks deep in the snowed-in valleys, all the scrolling country below looking December—brown and black hills streaked with snow, flashes of iced-over lakes, the long braids of a river gleaming at the bottom of a canyon. Above the wing the sky had deepened to a blue so pure he knew it would bring tears to his eyes if he looked long enough.",
       lines: [],
       fonts: [
-        "fantasy","Ubuntu","courier"
+        "helvetica","verdana","karla","futura"
       ],
       colors: [
-          "red","blue","yellow"
+          "rgb(42, 83, 147)","rgb(28, 55, 99)","rgb(22, 35, 68)"
         ]
       // colors:
     };
@@ -50,7 +50,7 @@ class App extends Component {
       else if(count===5)
       {
         if(!this.isPunctuation(words[i].charAt(words[i].length-1))){
-          line += (words[i]+"...");
+          line += (words[i]);
         } else {
           line += (words[i]);
         }
@@ -92,8 +92,8 @@ class App extends Component {
               console.log(Color);
               console.log(Font);
               return(
-                <p key={index} style={{color:Color,fontFamily:Font}}>
-                  {line}
+                <p key={index} style={{fontSize:30,color:Color,fontFamily:Font}}>
+                  <strong>{line}</strong>
                 </p>
               );
             })
