@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-const http2 = require('http2');
 
-    // Imports the Google Cloud client library
-    // const language = require('@google-cloud/language');
-
-    // // Instantiates a client
-    // const client = new language.LanguageServiceClient();
     
-    // // The text to analyze
-    // const phrase = 'Hello, world!';
 
 class App extends Component {
   constructor(){
@@ -31,25 +23,6 @@ class App extends Component {
 
   componentDidMount(){
     this.sliceText();
-
-    // const document = {
-    //   content: phrase,
-    //   type: 'PLAIN_TEXT',
-    // };
-
-    // // Detects the sentiment of the text
-    // client
-    //   .analyzeSentiment({document: document})
-    //   .then(results => {
-    //     const sentiment = results[0].documentSentiment;
-
-    //     console.log(`Text: ${phrase}`);
-    //     console.log(`Sentiment score: ${sentiment.score}`);
-    //     console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
-    //   })
-    //   .catch(err => {
-    //     console.error('ERROR:', err);
-    //   });
 
   }
 
