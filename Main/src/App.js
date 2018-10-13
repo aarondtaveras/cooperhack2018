@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Input from './components/Input';
 import ImportFile from './components/Import';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -11,6 +13,8 @@ class App extends Component {
         <Navbar />
         <ImportFile />
         <Input />
+        <Main />
+        <Footer />
       </div>
     );
   }

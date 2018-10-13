@@ -13,7 +13,7 @@ class MainNav extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
-              <Button bsStyle="primary">Themes!</Button>
+              <Button bsStyle="primary">Themes</Button>
             </NavItem>
           </Nav>
         </Navbar.Collapse>
