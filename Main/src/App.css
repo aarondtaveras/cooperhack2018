@@ -27,8 +27,8 @@
 
 .FooterText{
   display: block;
-  bottom: 0;
   width: 100%;
   text-align: center;
   font-size: 20px;
+  margin-bottom: 5px;
 }
