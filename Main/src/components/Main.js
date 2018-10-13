@@ -6,6 +6,7 @@ class Main extends Component {
     return (
       <div className="MainBox" >
         <h1>Machine Learning!</h1>
+        <p>Display text parse example</p>
       </div>
     );
   }
