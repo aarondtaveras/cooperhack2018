@@ -32,13 +32,19 @@
 }
 
 .MainBox{
+  display: block;
+  margin: 100px auto 100px auto;
+}
+
+.MainContainer{
   width: 1200px;
   height: 700px;
   background-color: #376A9D;
-  margin: 100px auto 100px auto;
   color: black;
   text-align: center;
   box-shadow: 0 15px 15px 0 rgba(0,0,0,.8);
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
 }
 

@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import { Button } from 'react-bootstrap';
 
 class App extends Component {
-
   constructor(){
     super();
     // Creating our state object - decide what data this component needs to store/manipulate
@@ -16,7 +15,6 @@ class App extends Component {
     };
     this.switchTheme = this.switchTheme.bind(this);
   };
-
   switchTheme(event){
     if(this.state.current_theme.name==="default"){
       this.setState({
